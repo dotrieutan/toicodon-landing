@@ -590,11 +590,9 @@ svg {
 }
 
 .activity-card {
-  align-items: end;
   aspect-ratio: 0.72;
   border-radius: 8px;
   color: var(--white);
-  display: flex;
   min-height: 360px;
   overflow: hidden;
   padding: 24px;
@@ -610,35 +608,45 @@ svg {
 }
 
 .activity-card > div {
-  position: relative;
+  bottom: 24px;
+  display: grid;
+  gap: 6px;
+  left: 24px;
+  min-height: 70px;
+  position: absolute;
+  right: 24px;
   z-index: 1;
 }
 
 .activity-card h3 {
   color: var(--white);
   font-size: 24px;
+  line-height: 1;
+  margin: 0;
 }
 
 .activity-card p {
   color: rgba(255, 255, 255, 0.88);
+  line-height: 1.42;
+  max-width: 180px;
 }
 
 .coffee-card {
   background:
     linear-gradient(135deg, rgba(31, 86, 67, 0.22), rgba(255, 255, 255, 0)),
-    url("assets/hero-companionship.png") center / cover;
+    url("assets/coffee-demo.png") center / cover;
 }
 
 .cinema-card {
   background:
     linear-gradient(135deg, rgba(89, 73, 142, 0.32), rgba(16, 21, 34, 0.16)),
-    url("assets/hero-companionship.png") 64% center / cover;
+    url("assets/cinema-demo.png") center / cover;
 }
 
 .hangout-card {
   background:
     linear-gradient(135deg, rgba(255, 98, 93, 0.22), rgba(16, 21, 34, 0.24)),
-    url("assets/hero-companionship.png") right center / cover;
+    url("assets/hangout-demo.png") center / cover;
 }
 
 .safety-section {
